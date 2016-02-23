@@ -19,9 +19,6 @@
 </template>
 
 <style>
-[v-cloak] {
-  display: none;
-}
 .fade-transition {
   transition: opacity .3s ease;
 }

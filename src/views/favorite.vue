@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="list-block media-list">
     <ul>
       <li>
@@ -85,6 +86,7 @@
   <div class="infinite-scroll-preloader">
     <div class="preloader"></div>
   </div>
+</div>  
 </template>
 
 <script>

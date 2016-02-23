@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from './app.vue'
-import Home from './views/home.vue'
-import Favorite from './views/favorite.vue'
-import Me from './views/me.vue'
+import App from './App.vue'
+import Home from './views/Home.vue'
+import Favorite from './views/Favorite.vue'
+import Me from './views/Me.vue'
 
 // install router
 Vue.use(Router);
