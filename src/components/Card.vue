@@ -2,7 +2,7 @@
   <a :href="card.link" data-transition='slide-in'>
     <div class="card color-default">
       <div style="" valign="bottom" class="card-header color-white no-border no-padding">
-        <img class='card-cover' :src="card.img" alt="">
+        <img class='card-cover' :src="card.img " alt="">
       </div>
       <div class="card-content">
         <div class="card-content-inner">
@@ -22,3 +22,10 @@ export default {
   props: ['card']
 }
 </script>
+
+<style>
+.card-header {
+  height: 10rem;
+  overflow: hidden;
+}
+</style>

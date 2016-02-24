@@ -8,19 +8,13 @@
     <h1 class="title">sui-mobile+vue的demo演示</h1>
   </header>
   <div class="content pull-to-refresh-content page-home infinite-scroll" id='home-page'>
-    <style>
-      .card-header {
-        height: 10rem;
-        overflow: hidden;
-      }
-    </style>
     <div class="pull-to-refresh-layer">
       <div class="preloader"></div>
       <div class="pull-to-refresh-arrow"></div>
     </div>
     <!-- 这里是页面内容区 -->
     <div class="list">
-      <card v-for="card in cards"></card>
+      <v-card v-for="card in cards" :card="card"></v-card>
     </div>
     <div class="infinite-scroll-preloader">
       <div class="preloader"></div>
@@ -30,9 +24,13 @@
 </template>
 
 <script>
-import Card from '../components/Card.vue'
+import $ from 'zepto'
+import VCard from '../components/Card.vue'
 
 export default {
+  ready () {
+    console.log('home ready');
+  },
   data () {
     return {
       cards: [
@@ -42,12 +40,26 @@ export default {
           description:'ROZENE春纯棉四件套 床上春夏 床单被套四件套全棉天丝四件套春夏',
           agree:120,
           comment:20
+        },
+        {
+          link: '/examples/baichuan/detail',
+          img: '//gd2.alicdn.com/bao/uploaded/i2/TB1mEnmHXXXXXXHapXXXXXXXXXX_!!0-item_pic.jpg_640x640.jpg',
+          description:'Roz居家美式高档床上用品纯棉4四件套全棉床单被套1.8m床上四件套',
+          agree:120,
+          comment:20
+        },
+        {
+          link: '/examples/baichuan/detail',
+          img: '//gd2.alicdn.com/bao/uploaded/i2/TB1QtUmGVXXXXbgaXXXXXXXXXXX_!!0-item_pic.jpg_640x640.jpg',
+          description:'美式床品套件 四件套 家纺全棉四件套 纯棉被套4件套床单',
+          agree:120,
+          comment:20
         }
       ]
     }
   },
   components: {
-    Card
+    VCard
   }
 }
 </script>
