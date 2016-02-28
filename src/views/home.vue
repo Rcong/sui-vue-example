@@ -30,7 +30,9 @@ import VCard from '../components/Card.vue'
 export default {
   ready () {
     console.log('home ready');
-    
+    window.onload = function () {
+      $.init();
+    }
   },
   data () {
     return {

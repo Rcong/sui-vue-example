@@ -1,8 +1,18 @@
 <template>
 <div>
-  <v-media-list :items="items"></v-media-list>
-  <div class="infinite-scroll-preloader">
-    <div class="preloader"></div>
+  <header class="bar bar-nav">
+    <h1 class="title">收藏</h1>
+  </header>
+  <div class="content pull-to-refresh-content page-home infinite-scroll" id='home-page'>
+    <div class="pull-to-refresh-layer">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
+    <v-media-list :items="items"></v-media-list>
+    <div class="pull-to-refresh-layer">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
   </div>
 </div>
 </template>
@@ -56,10 +66,10 @@ export default {
         {
           link:'/examples/baichuan/detail',
           img:'//gdp.alicdn.com/bao/uploaded/i4/TB13mgfHpXXXXcVXFXXXXXXXXXX_!!2-item_pic.png_240x240.jpg',
-          title:'Rozene居家馆',
+          title:'Rozene居家馆111',
           price:120,
           sales:345,
-          description:'Rozen 高档家纺品牌 床上用品夏100%天丝四件套 夏季贡缎欧美式'
+          description:'Rozen 高档家纺品牌 床上用品夏100%天丝四件套 夏季贡缎欧美式111'
         }
       ]
     }
