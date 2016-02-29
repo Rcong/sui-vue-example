@@ -9,6 +9,9 @@ module.exports = {
         filename: '[name].bundle.js',
         publicPath: '/dist/'
     },
+    externals: {
+      'zepto': 'Zepto'
+    },
     module: {
         // 加载器
         loaders: [
@@ -21,9 +24,6 @@ module.exports = {
     babel: {
         presets: ['es2015', 'stage-0'],
         plugins: ['transform-runtime']
-    },
-    externals: {
-      'zepto': 'Zepto'
     }
   }
 
