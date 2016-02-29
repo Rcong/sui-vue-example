@@ -7,7 +7,7 @@
     </a>
     <h1 class="title">sui-mobile+vue的demo演示</h1>
   </header>
-  <div class="content pull-to-refresh-content page-home infinite-scroll" id='home-page'>
+  <div id='home-page' class="content pull-to-refresh-content page-home infinite-scroll" data-distance="100">
     <div class="pull-to-refresh-layer">
       <div class="preloader"></div>
       <div class="pull-to-refresh-arrow"></div>
@@ -26,13 +26,17 @@
 <script>
 
 import VCard from '../components/Card.vue'
+import $ from 'zepto'
 
 export default {
   ready () {
-    console.log('home ready');
     window.onload = function () {
+      console.log('home ready');
       $.init();
     }
+    $(document).on("pageInit", function(e, id, page) {
+      console.log(e);
+    });
   },
   data () {
     return {

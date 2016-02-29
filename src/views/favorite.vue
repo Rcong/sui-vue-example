@@ -20,6 +20,11 @@
 <script>
 import VMediaList from '../components/MediaList.vue'
 export default {
+  ready(){
+    $(document).on('pageInit', '.infinite-scroll',function() {
+      console.log(111);
+    });
+  },
   data () {
     return {
       items:[

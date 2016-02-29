@@ -32,6 +32,6 @@
   "dependencies": {
     "vue": "^1.0.16",
     "vue-router": "^0.7.11",
-    "zepto": "^1.0.1"
+    "webpack-zepto": "0.0.1"
   }
 }
