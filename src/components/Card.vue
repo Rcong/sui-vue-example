@@ -1,5 +1,5 @@
 <template>
-  <a :href="card.link" data-transition='slide-in'>
+  <a v-link="{path:card.link, replace: true}" data-transition='slide-in'>
     <div class="card color-default">
       <div style="" valign="bottom" class="card-header color-white no-border no-padding">
         <img class='card-cover' :src="card.img " alt="">
