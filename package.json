@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --no-info",
+    "test": "webpack-dev-server --inline --hot --no-info",
+    "dev": "webpack-dev-server --host 10.0.0.9 --devtool eval --progress --colors --hot --content-base build",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "author": "XianYuJun",
