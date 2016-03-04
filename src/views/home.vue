@@ -26,37 +26,37 @@
 <script>
 
 import VCard from '../components/Card.vue'
-import $ from 'zepto'
 
 export default {
   ready () {
-    window.onload = function () {
+    $(function () {
       console.log('home ready');
+      $(document).on("infinite",".page",function(e, id, page) {
+        console.log(e);
+        console.log(id);
+      });
       $.init();
-    }
-    $(document).on("pageInit", function(e, id, page) {
-      console.log(e);
     });
   },
   data () {
     return {
       cards: [
         {
-          link: '/examples/baichuan/detail',
+          link: '/detail',
           img: '//gd1.alicdn.com/bao/uploaded/i1/TB1kzlgHVXXXXbtXpXXXXXXXXXX_!!0-item_pic.jpg_640x640.jpg',
           description:'ROZENE春纯棉四件套 床上春夏 床单被套四件套全棉天丝四件套春夏',
           agree:120,
           comment:20
         },
         {
-          link: '/examples/baichuan/detail',
+          link: '/detail',
           img: '//gd2.alicdn.com/bao/uploaded/i2/TB1mEnmHXXXXXXHapXXXXXXXXXX_!!0-item_pic.jpg_640x640.jpg',
           description:'Roz居家美式高档床上用品纯棉4四件套全棉床单被套1.8m床上四件套',
           agree:120,
           comment:20
         },
         {
-          link: '/examples/baichuan/detail',
+          link: '/detail',
           img: '//gd2.alicdn.com/bao/uploaded/i2/TB1QtUmGVXXXXbgaXXXXXXXXXXX_!!0-item_pic.jpg_640x640.jpg',
           description:'美式床品套件 四件套 家纺全棉四件套 纯棉被套4件套床单',
           agree:120,

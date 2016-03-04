@@ -146,7 +146,9 @@
 </template>
 
 <script>
-  export default {
-
+export default {
+  ready () {
+    $.init()
   }
+}
 </script>
