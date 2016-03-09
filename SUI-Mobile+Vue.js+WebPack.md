@@ -5,10 +5,31 @@
 
 一些效果截图:
 
-![首页.png](https://ooo.0o0.ooo/2016/03/02/56d7b0026cbb3.png) ![收藏.png](https://ooo.0o0.ooo/2016/03/02/56d7ad8dbf1fe.png) ![详情.png](https://ooo.0o0.ooo/2016/03/02/56d7ad8c6f46f.png)
+![首页.png](https://ooo.0o0.ooo/2016/03/02/56d7b0026cbb3.png) ![收藏.png](https://ooo.0o0.ooo/2016/03/02/56d7ad8dbf1fe.png)
+
+
 
 ### [Vue.js](http://cn.vuejs.org/) - 一个轻量级的[MVVM](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)库。
 
+使用Vue进行组件化模块化开发。
+![组件化](http://cn.vuejs.org/images/components.png)
+一个应用的每个子页面都被抽象成了一些组件的集合,开发页面就像拼装零件一样一样,一个vue可以引用其他vue,也能被其他vue应用,html、js、css都在一个vue中,应用的维护也从以页面为单位更细粒度到一个组件。在组件化模块化这一方面,Vue有vue-loader这一预编译工具用来管理vue的可预编译文件。
+
+以vue结尾的文件xxx.vue:
+```javascript
+<template>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+</style>
+
+```
 
 ### [webpack](http://webpack.github.io/) - 一款模块加载器兼打包工具。
 ![webpack](http://images0.cnblogs.com/blog2015/561179/201507/161453372048661.jpg)
@@ -68,3 +89,24 @@ module.exports = {
 ```
 
 这样就减少了请求数量。除此之外webpack还能压缩混淆、图片转base64,模块化的其他一些文件。
+
+
+> ### 参考
+
+[Webpack傻瓜式指南（一）](http://zhuanlan.zhihu.com/FrontendMagazine/20367175)
+
+[Webpack傻瓜指南（二）开发和部署技巧](http://zhuanlan.zhihu.com/FrontendMagazine/20397902)
+
+[Webpack傻瓜指南（三）和React配合开发](http://zhuanlan.zhihu.com/FrontendMagazine/20522487)
+
+[初学webpack遇到的坑](http://www.yatessss.com/webpack/2016/01/29/%E5%88%9D%E5%AD%A6webpack%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.html)
+
+[webpack官网手册](http://webpack.github.io/docs/tutorials/getting-started/)
+
+[一小时包教会 —— webpack 入门指南](http://www.cnblogs.com/vajoy/p/4650467.html)
+
+[Webpack 中文指南](http://zhaoda.net/webpack-handbook/)
+
+[webpack指南](http://webpack.toobug.net/zh-cn/index.html)
+
+[WebPack在项目配置中的探索](http://www.meckodo.com/?p=525)
